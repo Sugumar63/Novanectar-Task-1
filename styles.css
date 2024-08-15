@@ -1,0 +1,356 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+
+}
+
+:root {
+    --primary-color: #225e69;
+    --secondary-color: #ff6f00;
+    --ternary-color: rgba(1, 19, 27, 1)
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+
+}
+
+nav {
+    background: var(--ternary-color);
+    position: fixed;
+    height: 80px;
+    width: 100%;
+}
+
+label.logo a {
+    color: white;
+    font-size: 30px;
+    line-height: 80px;
+    padding: 0 50px;
+    font-weight: bold;
+}
+
+.logo a span {
+    color: var(--secondary-color);
+}
+
+nav ul {
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a {
+    color: white;
+    font-size: 20px;
+    padding: 7px 13px;
+    border-radius: 3px;
+}
+
+nav ul li a:hover {
+    background: var(--secondary-color);
+    transition: .5s;
+}
+
+.checkbtn {
+    display: none;
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+}
+
+#check {
+    display: none;
+}
+
+#home {
+    background: url(./assets/360_F_65482539_C0ZozE5gUjCafz7Xq98WB4dW6LAhqKfs.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 550px;
+    display: flex;
+    align-items: center;
+
+}
+
+.home-text {
+    margin-left: 2rem;
+    margin-top: 3rem;
+    margin-right: 2rem;
+}
+
+.home-text h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    color: black;
+}
+
+.home-text h4 {
+    font-size: 2rem;
+    font-weight: 500;
+    color: black;
+}
+
+.home-text h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: red;
+}
+
+.home-text h6 {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    font-weight: 500;
+    color: black;
+}
+
+.home-text h6 span {
+    font-weight: 800;
+    color: red;
+}
+
+.home-text p {
+    font-weight: 700;
+    color: black;
+}
+
+.explore {
+    background-color: rgba(1, 19, 27, 1);
+    color: var(--secondary-color);
+    padding: 70px 0;
+    text-align: center;
+}
+
+.explore h1 {
+    font-size: 2.5rem;
+}
+
+.explore p {
+    font-size: 1.2rem;
+    margin: 20px 0;
+    color: white;
+}
+
+.properties {
+    border-radius: 2rem;
+}
+
+.properties-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, auto));
+    gap: 2rem;
+
+}
+
+.properties-container .box {
+    padding: 10px;
+    border-radius: 1rem;
+}
+
+.properties-container .box:hover {
+    transform: translateY(-10px);
+    transition: 0.5s;
+}
+
+.properties-container .box img {
+    border-radius: 1rem;
+    height: 220px;
+    object-fit: cover;
+    object-position: center;
+    cursor: pointer;
+
+}
+
+
+.cta-button {
+    margin-top: 50px;
+    display: inline-block;
+    padding: 10px 30px;
+    background-color: var(--secondary-color);
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: white;
+    color: rgba(1, 19, 27, 1);
+}
+
+
+.detail {
+    padding: 50px 0;
+    background-color: var(--primary-color);
+    text-align: center;
+}
+
+.detail h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: var(--secondary-color);
+}
+
+.detail h2 span {
+    color: white;
+}
+
+form {
+    width: 750px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.detail label {
+    display: block;
+    margin-bottom: 5px;
+    color: white;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 3px solid rgba(1, 19, 27, 1);
+    border-radius: 5px;
+}
+
+button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--secondary-color);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: var(--ternary-color);
+}
+
+footer {
+    background-color: rgba(1, 19, 27, 1);
+    color: var(--secondary-color);
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer p {
+    margin-top: 1rem;
+}
+
+.connect p {
+    color: white;
+}
+
+.socials {
+    display: inline-block;
+    align-items: center;
+    gap: 1rem;
+}
+
+.socials a {
+    font-size: 2rem;
+    color: var(--secondary-color);
+}
+
+.socials a:hover {
+    color: white;
+}
+
+
+
+/* Media Responsive */
+
+@media (max-width:950px) {
+    label.logo a {
+        font-size: 30px;
+        padding-left: 50px;
+    }
+
+    nav ul li a {
+        font-size: 20px;
+    }
+}
+
+@media (max-width:550px) {
+    label.logo a {
+        font-size: 30px;
+        padding-left: 50px;
+    }
+}
+
+@media (max-width:850px) {
+    .checkbtn {
+        display: block;
+    }
+
+    .checkbtn #cancel {
+        display: none;
+    }
+
+    ul {
+        position: fixed;
+        width: 50%;
+        height: 100vh;
+        background: #2c3e50;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+
+    }
+
+    nav ul li a {
+        font-size: 20px;
+    }
+
+    #check:checked~ul {
+        left: 0;
+    }
+
+    #check:checked~label #btn {
+        display: none;
+    }
+
+    #check:checked~label #cancel {
+        display: inline-block;
+    }
+}
+
+@media (max-width:770px) {
+    form {
+        width: 500px;
+    }
+}
+
+@media (max-width:550px) {
+    form {
+        width: 300px;
+    }
+}
